@@ -36,6 +36,9 @@ return [
     ],
 
     'wb_api' => [
-        'key' => env('EXTERNAL_WB_API_KEY')
+        'host' => env('EXTERNAL_WB_API_HOST', '109.73.206.144'),
+        'port' => env('EXTERNAL_WB_API_PORT', '6969'),
+        'uri' => env('EXTERNAL_WB_API_URI', 'api'),
+        'key' => env("EXTERNAL_WB_API_KEY"),
     ]
 ];
